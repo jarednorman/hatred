@@ -6,7 +6,7 @@ pure Lua easy! Unfortunately, Lua can be a unnecessarily awkward to develop
 games in without some convenience libraries. I'm building a custom project
 skeleton for building games with Love that provides handy libraries including:
 [Middleclass](https://github.com/kikito/middleclass) (a class implementation),
-[Stateful](https://github.com/kikito/stateful.lua) (a GOF state pattern mixin
+[Stateful](https://github.com/kikito/stateful.lua) (a GoF state pattern mixin
 for Middleclass), and a few more.
 
 On top of the libs, there'll be a small amount of project code. I like to have
