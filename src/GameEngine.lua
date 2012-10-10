@@ -1,7 +1,9 @@
 module(..., package.seeall)
 
-require 'libs/middleclass/middleclass'
+           require 'libs/middleclass/middleclass'
 Stateful = require 'libs/stateful/stateful'
+Beholder = require 'libs/beholder/beholder'
+Tween    = require 'libs/tween/tween'
 
 GameEngine = class('GameEngine')
 
@@ -83,3 +85,4 @@ end
 
 function GameEngine:quit()
 end
+
