@@ -1,4 +1,5 @@
-# Love Project Skeleton
+# Hatred
+#### A skeleton project for the Love game framework
 
 [Love2D](https://love2d.org/) is a fun project that makes game development in
 pure Lua easy! Unfortunately, Lua can be a unnecessarily awkward to develop
