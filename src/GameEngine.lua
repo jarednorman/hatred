@@ -1,7 +1,7 @@
 module(..., package.seeall)
 
-require 'libs/middleclass'
-Stateful = require 'libs/stateful'
+require 'libs/middleclass/middleclass'
+Stateful = require 'libs/stateful/stateful'
 
 GameEngine = class('GameEngine')
 
