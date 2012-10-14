@@ -4,7 +4,7 @@ if DEBUG then
   require 'luacov'
 end
 
-GameEngine = require 'src.GameEngine'  
+GameEngine = require 'src.GameEngine'
 
 function love.run()
   -- initialize and hand off to GameEngine:run()
