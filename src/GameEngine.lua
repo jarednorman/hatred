@@ -9,6 +9,7 @@ GameEngine = class('GameEngine')
 
 function GameEngine:initialize()
   self.keysPressed = {}
+  love.graphics.setMode(0, 0, true)
 end
 
 function GameEngine:run()
@@ -70,6 +71,9 @@ end
 
 function GameEngine:keyReleased(key)
   self.keysPressed[key] = false
+  if key == 'escape' then
+    love.event.push 'quit'
+  end
   return true
 end
 

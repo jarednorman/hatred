@@ -1,4 +1,7 @@
-.PHONY : spec test clean 
+.PHONY : run spec coverage clean
+
+run:
+	${LOVEPATH} ./
 
 spec:
 	busted `find spec -name \*spec.lua -print`
