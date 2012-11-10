@@ -1,12 +1,12 @@
 
+GameEngine = require('src.GameEngine')
+
 describe("GameEngine", function()
 
-  setup(function()
-    GameEngine = require('src.GameEngine')
-  end)
+  local engine
 
-  it("exists", function()
-    engine = GameEngine.GameEngine.new()
+  before_each(function()
+    engine = GameEngine.GameEngine:new()
   end)
 
 end)
