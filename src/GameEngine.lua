@@ -9,7 +9,7 @@ GameEngine = class('GameEngine')
 
 function GameEngine:initialize()
   self.keysPressed = {}
-  love.graphics.setMode(0, 0, true)
+  love.graphics.setMode(1024, 600, false)
 end
 
 function GameEngine:run()
