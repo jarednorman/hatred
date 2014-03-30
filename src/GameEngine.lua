@@ -1,9 +1,6 @@
 module(..., package.seeall)
 
-           require 'libs/middleclass/middleclass'
-Stateful = require 'libs/stateful/stateful'
-Beholder = require 'libs/beholder/beholder'
-Tween    = require 'libs/tween/tween'
+require 'libs'
 
 GameEngine = class('GameEngine')
 
