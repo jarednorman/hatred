@@ -1,14 +1,41 @@
-DEBUG = false
-if DEBUG then
-  require 'luarocks.loader'
-  require 'luacov'
+
+package.path = package.path .. ';./src/?/init.lua'
+require 'libs'
+
+function love.load()
+  local GameEngine = require 'game_engine'
+  engine = GameEngine:new()
 end
 
-GameEngine = require 'src.GameEngine'
+function love.update(dt)
+  engine:update(dt)
+end
 
-function love.run()
-  -- initialize and hand off to GameEngine:run()
-  engine = GameEngine.GameEngine:new()
-  engine:run()
+function love.draw()
+  engine.draw()
+end
+
+function love.mousepressed(x, y, button)
+  engine:mouseClicked(x, y, button)
+end
+
+function love.mousereleased(x, y, button)
+  engine:mouseReleased(x, y, button)
+end
+
+function love.keypressed(key)
+  engine:keyPressed(key)
+end
+
+function love.keyreleased(key)
+  engine:keyReleased(key)
+end
+
+function love.focus(focus)
+  if focus then engine:focus() else engine:unfocus() end
+end
+
+function love.quit()
+  engine:quit()
 end
 
