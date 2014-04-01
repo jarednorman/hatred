@@ -1,8 +1,6 @@
-module(..., package.seeall)
-
 require 'libs'
 
-GameEngine = class('GameEngine')
+local GameEngine = class('GameEngine')
 
 function GameEngine:initialize()
   self.keysPressed = {}
