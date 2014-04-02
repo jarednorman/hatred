@@ -6,7 +6,6 @@ function GameEngine:initialize()
   self.keysPressed = {}
   love.window.setMode(800, 600, { fullscreen = false })
   math.randomseed(os.time())
-  math.random() math.random()
 end
 
 function GameEngine:update(dt)
