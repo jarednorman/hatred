@@ -2,6 +2,10 @@ require 'libs'
 
 local GameEngine = class('GameEngine')
 
+GameEngine.videoSettings = {
+  fullscreen = false
+}
+
 function GameEngine:initialize()
   self.keysPressed = {}
   love.window.setMode(800, 600, { fullscreen = false })
