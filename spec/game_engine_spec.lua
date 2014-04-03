@@ -26,6 +26,10 @@ describe("GameEngine", function()
     it("sets the key state to all false", function()
       assert.equal(#engine().keysPressed, 0)
     end)
+
+    it("finds and sets the default game state", function()
+      assert.equal(engine():getGameState().class, DefaultGameState)
+    end)
   end)
 
   describe(":keyPressed", function()
