@@ -15,14 +15,6 @@ function love.draw()
   engine.draw()
 end
 
-function love.mousepressed(x, y, button)
-  engine:mouseClicked(x, y, button)
-end
-
-function love.mousereleased(x, y, button)
-  engine:mouseReleased(x, y, button)
-end
-
 function love.keypressed(key)
   engine:keyPressed(key)
 end

@@ -33,12 +33,6 @@ function GameEngine:isKeyPressed(key)
   return self.keysPressed[key] == true
 end
 
-function GameEngine:mouseClicked(x, y, button)
-end
-
-function GameEngine:mouseReleased(x, y, button)
-end
-
 function GameEngine:focus()
 end
 
