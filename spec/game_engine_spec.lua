@@ -10,17 +10,17 @@ describe("GameEngine", function()
 
   describe(":initialize", function()
     before_each(function()
-      spy.on(math, "randomseed")
-      spy.on(love.window, "setMode")
+      stub(math, "randomseed")
+      stub(love.window, "setMode")
       engine()
     end)
 
     it("sets up the window", function()
-      assert.spy(love.window.setMode).was.called_with(800, 600, GameEngine.videoSettings)
+      assert.stub(love.window.setMode).was.called_with(800, 600, GameEngine.videoSettings)
     end)
 
     it("initializes the random number generator", function()
-      assert.spy(math.randomseed).was_called(1)
+      assert.stub(math.randomseed).was_called(1)
     end)
 
     it("sets the key state to all false", function()
