@@ -4,7 +4,7 @@ run:
 	${LOVEPATH} ./
 
 spec:
-	busted `find spec -name \*spec.lua -print`
+	busted ./spec
 
 coverage:
 	luacov luacov.stats.out && cat luacov.report.out | less
