@@ -1,5 +1,3 @@
-require 'libs'
-
 local GameEngine = class('GameEngine')
 
 GameEngine.videoSettings = {
